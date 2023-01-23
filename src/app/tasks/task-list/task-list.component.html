@@ -1,0 +1,37 @@
+
+<div>
+<ul>    
+    <a href="#" class="active"> Curso</a>
+</ul>
+</div>
+
+<section class="table" id="table">
+    <form method="POST">
+        <div id="input-data">
+        <h4>Curso</h4>
+        <h6>Nome:</h6>
+        <input class="inputText" id="name" type="text" required />
+       <div>
+
+        </div>
+        <input class="botao" type="submit" value="Pesquisar" onclick="return addToTable()" />
+        <br>        
+        </div>
+      </form>
+
+    <table class="myTable" id="myTable">
+        <tr id="0">
+            <th class="inputTable">Codigo</th>
+            <th class="inputTable">Nome</th>
+            <th class="inputTable">Instrutor</th>
+            <th class="inputTable">Local</th>
+            <th class="inputTable">Carga Horaria</th>
+            <th class="inputTable">Data Inicio</th>
+        </tr>
+    </table>
+
+
+    <button type="button" class="botao" [routerLink]="['/new']" >Incluir</button>
+
+
+</section>
